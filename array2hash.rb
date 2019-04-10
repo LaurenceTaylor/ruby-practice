@@ -11,9 +11,7 @@ players = [
 
 result = Hash.new { |key, value| key[value] = [] }
 
-players.each do |hash|
-  result[hash[:sport]] << hash[:name]
-end
+players.each { |hash| result[hash[:sport]] << hash[:name] }
 
 puts result
 
