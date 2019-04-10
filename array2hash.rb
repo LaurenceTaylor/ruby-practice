@@ -9,7 +9,7 @@ players = [
   { :name => "Mark", :sport => "football" }
 ]
 
-result = Hash.new { |key, value| key[value] = [] }
+result = Hash.new { |hash, key| hash[key] = [] }
 
 players.each { |hash| result[hash[:sport]] << hash[:name] }
 
